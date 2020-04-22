@@ -26,7 +26,7 @@ public class Main
 {
     public static void main(String args[]) 
     {
-        double p,time,r,n;
+        double p,time,r;
         
         
         Scanner sc = new Scanner(System.in);

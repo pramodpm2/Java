@@ -12,7 +12,7 @@ public class AppletDemo extends Applet implements ActionListener
 
     public void init()
     {
-           setSize(500,300);
+           
        l1=new Label("Principal Amount");
        l1.setBounds(100,40,100,20);
        t1=new TextField(10);

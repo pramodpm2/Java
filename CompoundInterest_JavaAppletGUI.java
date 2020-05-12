@@ -12,13 +12,12 @@ public class AppletDemo extends Applet implements ActionListener
 
     public void init()
     {
-           
        l1=new Label("Principal Amount");
        l1.setBounds(100,40,100,20);
        t1=new TextField(10);
            t1.setBounds(210,40,100,20);
            add(l1);
-       add(t1);
+           add(t1);
 
        l2=new Label("Interest Rate");
        l2.setBounds(100,80,100,20);
@@ -59,9 +58,9 @@ public class AppletDemo extends Applet implements ActionListener
     }
     public void actionPerformed(ActionEvent e)
     {
-         float p=Integer.parseInt(t1.getText());
+         float p=Float.parseFloat(t1.getText());
      float r=Float.parseFloat(t2.getText());
-     float t=Integer.parseInt(t3.getText());
+     float t=Float.parseFloat(t3.getText());
          double result=0;
      
     

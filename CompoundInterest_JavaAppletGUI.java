@@ -42,7 +42,7 @@ public class AppletDemo extends Applet implements ActionListener
 
 
       b1=new Button("submit");
-     // b1.setBoundas(200,200,100,20);
+  
       add(b1);
       b1.addActionListener(this);
 
@@ -58,15 +58,25 @@ public class AppletDemo extends Applet implements ActionListener
     }
     public void actionPerformed(ActionEvent e)
     {
-         float p=Float.parseFloat(t1.getText());
+        
+   try
+     {
+
+    int p=Integer.parseInt(t1.getText());
      float r=Float.parseFloat(t2.getText());
-     float t=Float.parseFloat(t3.getText());
+     int t=Integer.parseInt(t3.getText());
          double result=0;
-     
     
-         result=p * (Math.pow((1 + r / 100), t));
+    
+     result=p * (Math.pow((1 + r / 100), t));
      t4.setText(String.valueOf(result)); 
-    
+    }
+
+     catch (NumberFormatException ex)
+	{
+	      System.out.println("NumberFormatException: " + ex.getMessage());
+	      System.out.println("Please Enter The valid Inputs......");
+	}
          
 
      
